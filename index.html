@@ -1,87 +1,63 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pedang Bermata Dua: Ancaman Otomatisasi dan Kejahatan Siber AI</title>
-  <style>
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f4f6f8;
-      color: #202124;
-      line-height: 1.8;
-    }
-    header {
-      background: #172033;
-      color: white;
-      padding: 42px 20px;
-      text-align: center;
-    }
-    header h1 {
-      max-width: 900px;
-      margin: 0 auto 10px;
-      font-size: clamp(28px, 5vw, 46px);
-      line-height: 1.2;
-    }
-    header p {
-      margin: 0;
-      color: #cbd3df;
-      font-size: 16px;
-    }
-    main {
-      max-width: 900px;
-      margin: 35px auto;
-      padding: 0 20px;
-    }
-    article {
-      background: white;
-      padding: clamp(25px, 5vw, 55px);
-      border-radius: 14px;
-      box-shadow: 0 5px 25px rgba(0,0,0,.07);
-    }
-    article p {
-      margin: 0 0 22px;
-      text-align: justify;
-      font-size: 17px;
-    }
-    .lead {
-      font-size: 19px;
-      font-weight: 500;
-    }
-    footer {
-      text-align: center;
-      padding: 30px 20px;
-      color: #68707c;
-      font-size: 14px;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pedang Bermata Dua — Ancaman Otomatisasi dan Kejahatan Siber AI</title>
+<style>
+:root{--navy:#10233f;--blue:#2476d9;--light:#f4f7fb;--text:#26364d;--muted:#68778c;--line:#e5ebf3}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--light);color:var(--text);line-height:1.8}
+nav{height:70px;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 max(24px,calc((100% - 1160px)/2));position:sticky;top:0;z-index:10}
+.brand{font-size:22px;font-weight:800;color:var(--navy);display:flex;align-items:center;gap:10px}.logo{width:38px;height:38px;border-radius:11px;background:var(--blue);color:white;display:grid;place-items:center;font-size:12px;font-weight:900}
+.navlinks{display:flex;gap:30px}.navlinks a{text-decoration:none;color:var(--navy);font-weight:600}
+.hero{background:linear-gradient(110deg,#10233f,#1d3c62 55%,#275f9a);color:white}
+.hero-inner{max-width:1160px;margin:auto;padding:70px 24px 65px}.badge{display:inline-block;background:#3187e8;padding:5px 14px;border-radius:30px;font-size:13px;font-weight:700}
+h1{font-size:clamp(32px,5vw,58px);line-height:1.12;max-width:900px;margin:18px 0}.subtitle{font-size:19px;max-width:760px;color:#dce8f7}
+.meta{display:flex;gap:25px;flex-wrap:wrap;margin-top:28px;font-size:14px;color:#e4edf8}
+.container{max-width:1160px;margin:35px auto;padding:0 24px;display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:25px}
+article,.card{background:white;border:1px solid var(--line);border-radius:16px;box-shadow:0 8px 30px rgba(20,45,80,.06)}
+article{padding:clamp(25px,5vw,55px)}h2{color:var(--navy);font-size:27px;line-height:1.3;margin:0 0 14px}
+p{font-size:17px;margin:0 0 24px;text-align:justify}article p:first-of-type{font-size:18px}
+aside{display:flex;flex-direction:column;gap:18px}.card{padding:25px}.card h3{margin:0 0 15px;color:var(--navy)}
+.toc a{display:block;text-decoration:none;color:var(--text);padding:8px 0;border-bottom:1px solid var(--line);font-size:14px}
+.author{font-weight:800;color:var(--navy);font-size:18px}.quote{background:#edf5ff;border-left:4px solid var(--blue);padding:18px;margin-top:10px;font-style:italic}
+footer{text-align:center;padding:35px 20px;color:var(--muted);font-size:14px}
+@media(max-width:800px){.navlinks{display:none}.container{grid-template-columns:1fr}.hero-inner{padding-top:48px}p{text-align:left}}
+</style>
 </head>
 <body>
-  <header>
-    <h1>Pedang Bermata Dua: Ancaman Otomatisasi dan Kejahatan Siber AI</h1>
-    <p>Artikel tentang dampak, ancaman, dan pengendalian kecerdasan buatan</p>
-  </header>
+<nav><div class="brand"><span class="logo">AI</span> AI Insight</div><div class="navlinks"><a href="#">Beranda</a><a href="#artikel">Artikel</a><a href="#penulis">Penulis</a></div></nav>
 
-  <main>
-    <article>
-      <p class="lead">Kecerdasan buatan (Artificial Intelligence/AI) adalah teknologi komputer yang diciptakan untuk menirukan cara berpikir dan mengambil keputusan seperti manusia. Saat ini, AI sudah banyak digunakan karena mampu membantu pekerjaan manusia menjadi lebih cepat dan efisien. Namun, teknologi ini ibarat pedang bermata dua yang juga menyimpan sisi berbahaya. Jika perkembangannya tidak diawasi dengan ketat, AI dapat menjadi ancaman nyata bagi masyarakat, terutama melalui otomatisasi yang menggantikan peran pekerja serta maraknya aksi kejahatan siber yang semakin canggih.</p>
+<header class="hero"><div class="hero-inner">
+<span class="badge">TEKNOLOGI</span>
+<h1>Pedang Bermata Dua: Ancaman Otomatisasi dan Kejahatan Siber AI</h1>
+<div class="subtitle">Kecerdasan buatan membawa efisiensi besar, tetapi juga menghadirkan tantangan serius bagi masyarakat.</div>
+<div class="meta"><span>✦ Oleh <strong>Sulthan Putra J</strong></span><span>▣ 17 September 2026</span><span>◷ 5 menit baca</span></div>
+</div></header>
 
-      <p>Dampak negatif perkembangan AI dapat dilihat secara nyata pada sektor sosial dan ekonomi masyarakat. Otomatisasi pekerjaan secara besar-besaran di berbagai bidang berpotensi memicu pengangguran massal dan mengikis keterampilan para pekerja yang sulit beradaptasi. Selain masalah lapangan kerja, sistem AI juga berisiko menghasilkan keputusan yang bias dan diskriminatif, seperti dalam proses rekrutmen pegawai. Ketidakadilan algoritma ini, ditambah dengan penguasaan teknologi oleh korporasi besar, pada akhirnya semakin memperlebar jurang kesenjangan sosial di tengah masyarakat.</p>
+<main class="container"><article id="artikel">
+<h2>Pendahuluan</h2>
+<p>Kecerdasan buatan (Artificial Intelligence/AI) adalah teknologi komputer yang diciptakan untuk menirukan cara berpikir dan mengambil keputusan seperti manusia. Saat ini, AI sudah banyak digunakan karena mampu membantu pekerjaan manusia menjadi lebih cepat dan efisien. Namun, teknologi ini ibarat pedang bermata dua yang juga menyimpan sisi berbahaya. Jika perkembangannya tidak diawasi dengan ketat, AI dapat menjadi ancaman nyata bagi masyarakat, terutama melalui otomatisasi yang menggantikan peran pekerja serta maraknya aksi kejahatan siber yang semakin canggih.</p>
+<h2>Dampak Sosial dan Ekonomi</h2>
+<p>Dampak negatif perkembangan AI dapat dilihat secara nyata pada sektor sosial dan ekonomi masyarakat. Otomatisasi pekerjaan secara besar-besaran di berbagai bidang berpotensi memicu pengangguran massal dan mengikis keterampilan para pekerja yang sulit beradaptasi. Selain masalah lapangan kerja, sistem AI juga berisiko menghasilkan keputusan yang bias dan diskriminatif, seperti dalam proses rekrutmen pegawai. Ketidakadilan algoritma ini, ditambah dengan penguasaan teknologi oleh korporasi besar, pada akhirnya semakin memperlebar jurang kesenjangan sosial di tengah masyarakat.</p>
+<h2>Ancaman terhadap Privasi</h2>
+<p>Selain dampak sosial dan ekonomi, AI juga membawa ancaman serius terhadap privasi dan kebebasan individu. Kemampuan AI dalam mengumpulkan serta menganalisis data pribadi skala besar memungkinkan terjadinya pengawasan massal oleh pihak tertentu. Penggunaan teknologi seperti sistem pengenalan wajah (facial recognition) tanpa aturan hukum yang jelas berpotensi memicu timbulnya otoritarianisme digital. Hal ini membuat aktivitas masyarakat dapat dipantau secara ketat, sehingga mengikis ruang privasi serta mengancam hak kebebasan berekspresi warga negara di ruang publik.</p>
+<h2>Kejahatan Siber Berbasis AI</h2>
+<p>Ancaman AI berlanjut pada maraknya kejahatan siber berbasis teknologi modern ini. Para pelaku kejahatan kini menggunakan AI untuk membuat rekayasa sosial dan aksi phishing yang jauh lebih meyakinkan. Pemanfaatan deepfake untuk memalsukan suara maupun video pejabat juga marak digunakan dalam penipuan finansial. Selain itu, penyebaran malware otomatis seperti Vidar Stealer serta penggunaan model AI tanpa sensor makin mempermudah peretasan sistem. Aksi kejahatan digital ini tidak hanya merugikan masyarakat secara finansial, tetapi juga mengancam keamanan infrastruktur penting suatu negara.</p>
+<h2>Keamanan Nasional dan Geopolitik</h2>
+<p>Di tingkat yang lebih luas, AI menghadirkan bahaya besar bagi keamanan nasional dan geopolitik global. Penggunaan sistem senjata dan drone otonom dalam bidang militer berisiko memicu serangan fatal terhadap warga sipil jika terjadi kesalahan algoritma. Selain itu, sistem pertahanan otomatis dapat memicu eskalasi konflik antarnegara secara tidak disengaja akibat salah membaca sinyal ancaman. Pemanfaatan AI untuk menyebarkan disinformasi dan deepfake propaganda juga efektif merusak stabilitas politik serta menurunkan kepercayaan masyarakat terhadap pemerintah.</p>
+<h2>Solusi Strategis</h2>
+<p>Bahaya terbesar dari AI terletak pada sifatnya yang otonom, sehingga manusia berisiko kehilangan kontrol atas keputusan penting di sektor medis, militer, maupun keuangan. Untuk meredam ancaman ini, diperlukan solusi strategis seperti penerapan regulasi etika yang ketat dan perlindungan data pribadi. Selain itu, peningkatan pertahanan siber berbasis AI, penguatan literasi digital masyarakat, serta kerja sama internasional sangat mendesak dilakukan. Langkah-langkah ini penting agar perkembangan AI dapat dikendalikan demi kemajuan bersama, bukan malah merusak tatanan kemanusiaan.</p>
+<h2>Kesimpulan</h2>
+<p>Kesimpulannya, AI memang ibarat pedang bermata dua yang menawarkan efisiensi tinggi, tetapi juga menyimpan potensi bahaya laten seperti masalah otomatisasi dan kejahatan siber. Kita tidak mungkin menghentikan perkembangan teknologi ini, tetapi kita bisa mengendalikan arah pemanfaatannya. Melalui aturan yang tegas, literasi digital yang baik, dan rasa tanggung jawab bersama, AI dapat diarahkan untuk menjadi alat yang aman dan bermanfaat bagi masa depan peradaban manusia.</p>
+</article>
 
-      <p>Selain dampak sosial dan ekonomi, AI juga membawa ancaman serius terhadap privasi dan kebebasan individu. Kemampuan AI dalam mengumpulkan serta menganalisis data pribadi skala besar memungkinkan terjadinya pengawasan massal oleh pihak tertentu. Penggunaan teknologi seperti sistem pengenalan wajah (facial recognition) tanpa aturan hukum yang jelas berpotensi memicu timbulnya otoritarianisme digital. Hal ini membuat aktivitas masyarakat dapat dipantau secara ketat, sehingga mengikis ruang privasi serta mengancam hak kebebasan berekspresi warga negara di ruang publik.</p>
-
-      <p>Ancaman AI berlanjut pada maraknya kejahatan siber berbasis teknologi modern ini. Para pelaku kejahatan kini menggunakan AI untuk membuat rekayasa sosial dan aksi phishing yang jauh lebih meyakinkan. Pemanfaatan deepfake untuk memalsukan suara maupun video pejabat juga marak digunakan dalam penipuan finansial. Selain itu, penyebaran malware otomatis seperti Vidar Stealer serta penggunaan model AI tanpa sensor makin mempermudah peretasan sistem. Aksi kejahatan digital ini tidak hanya merugikan masyarakat secara finansial, tetapi juga mengancam keamanan infrastruktur penting suatu negara.</p>
-
-      <p>Di tingkat yang lebih luas, AI menghadirkan bahaya besar bagi keamanan nasional dan geopolitik global. Penggunaan sistem senjata dan drone otonom dalam bidang militer berisiko memicu serangan fatal terhadap warga sipil jika terjadi kesalahan algoritma. Selain itu, sistem pertahanan otomatis dapat memicu eskalasi konflik antarnegara secara tidak disengaja akibat salah membaca sinyal ancaman. Pemanfaatan AI untuk menyebarkan disinformasi dan deepfake propaganda juga efektif merusak stabilitas politik serta menurunkan kepercayaan masyarakat terhadap pemerintah.</p>
-
-      <p>Bahaya terbesar dari AI terletak pada sifatnya yang otonom, sehingga manusia berisiko kehilangan kontrol atas keputusan penting di sektor medis, militer, maupun keuangan. Untuk meredam ancaman ini, diperlukan solusi strategis seperti penerapan regulasi etika yang ketat dan perlindungan data pribadi. Selain itu, peningkatan pertahanan siber berbasis AI, penguatan literasi digital masyarakat, serta kerja sama internasional sangat mendesak dilakukan. Langkah-langkah ini penting agar perkembangan AI dapat dikendalikan demi kemajuan bersama, bukan malah merusak tatanan kemanusiaan.</p>
-
-      <p>Kesimpulannya, AI memang ibarat pedang bermata dua yang menawarkan efisiensi tinggi, tetapi juga menyimpan potensi bahaya laten seperti masalah otomatisasi dan kejahatan siber. Kita tidak mungkin menghentikan perkembangan teknologi ini, tetapi kita bisa mengendalikan arah pemanfaatannya. Melalui aturan yang tegas, literasi digital yang baik, dan rasa tanggung jawab bersama, AI dapat diarahkan untuk menjadi alat yang aman dan bermanfaat bagi masa depan peradaban manusia.</p>
-    </article>
-  </main>
-
-  <footer>© 2026 — Artikel Kecerdasan Buatan</footer>
-</body>
-</html>
+<aside>
+<div class="card toc"><h3>Daftar Isi</h3><a href="#artikel">Pendahuluan</a><a href="#artikel">Dampak Sosial dan Ekonomi</a><a href="#artikel">Ancaman terhadap Privasi</a><a href="#artikel">Kejahatan Siber Berbasis AI</a><a href="#artikel">Keamanan Nasional dan Geopolitik</a><a href="#artikel">Solusi Strategis</a><a href="#artikel">Kesimpulan</a></div>
+<div class="card" id="penulis"><h3>Tentang Penulis</h3><div class="author">Sulthan Putra J</div><p style="font-size:14px;text-align:left;margin-top:8px">Penulis dan pelajar yang tertarik pada perkembangan teknologi dan dampaknya terhadap kehidupan manusia.</p></div>
+<div class="card"><h3>Catatan</h3><div class="quote">“Teknologi dapat menjadi alat yang bermanfaat apabila dikembangkan dan digunakan secara bertanggung jawab.”</div></div>
+</aside>
+</main>
+<footer>© 2026 Sulthan Putra J · AI Insight</footer>
+</body></html>
